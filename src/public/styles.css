@@ -21,11 +21,12 @@ body {
 }
 
 header.top {
+  color:  white;
   grid-area: header;
   display: grid;
   grid-template-areas: "logo header-text";
   grid-template-columns: 60px auto; 
-  background: rgb(181, 216, 255);
+  background: #7213EA;
   padding: 10px 5px;
   border-radius: 3px;
 }
@@ -47,7 +48,7 @@ header.top h1 {
 
 aside {
   grid-area: aside;
-  background: rgb(181, 216, 255);
+  background: #7213EA;
   border-radius: 3px;
 }
 
@@ -60,12 +61,12 @@ aside ul {
 aside ul a {
   display: block;
   padding: 5px;
-  color: rgb(86, 40, 129);
+  color:  white;
   text-decoration: none;
 }
 
 aside ul a:hover {
-  background: rgb(96, 123, 153);
+  background:#7213EA;
   color: white;
   border-radius: 3px;
 }
@@ -75,21 +76,23 @@ main {
 }
 
 footer {
+  color:  white;
   grid-area: footer;
-  background: rgb(181, 216, 255);
+  background:#7213EA;
   padding: 8px;
   border-radius: 3px; 
 }
 
 section.home-page {
-  background: rgb(171, 208, 243);
+  color:  white;
+  background: #7213EA;
   padding: 15px;
   border-radius: 5px;
 }
 
 div.home-page-icons a {
-  color: rgb(86, 40, 129);
-  background: rgb(171, 208, 243);
+  color:  white;
+  background: #7213EA;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
