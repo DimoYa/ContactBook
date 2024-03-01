@@ -66,7 +66,7 @@ aside ul a {
 }
 
 aside ul a:hover {
-  background:#7213EA;
+  background:#1E49E2;
   color: white;
   border-radius: 3px;
 }
@@ -111,7 +111,7 @@ div.home-page-icons a span.icon {
 }
 
 div.home-page-icons a:hover {
-  background: rgb(96, 123, 153);
+  background:#1E49E2;
   color: white;
 }
 
@@ -130,14 +130,14 @@ table tr:nth-child(even) {
 }
 
 table tr:hover {
-  background-color: rgb(173, 204, 240);
+  background-color: #1E49E2;
 }
 
 table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: rgb(84, 144, 212);
+  background-color: #7213EA;
   color: white;
 }
 
@@ -197,10 +197,11 @@ form table textarea {
 }
 
 form button {
+  color: white;
   padding: 15px 30px;
   border-radius: 10px;
   outline: none;
-  background: #9bcef0;
+  background: #7213EA;
   width: 100%;
   margin: 0 auto;
   display: block;
