@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-unit-test:
+  build:
 
     runs-on: ubuntu-latest
     steps:
@@ -22,7 +22,7 @@ jobs:
       run: npm install
     
   deploy-app:
-    needs: build-unit-test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to production
