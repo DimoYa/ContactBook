@@ -12,7 +12,7 @@
     "chai-http": "^4.4.0"
   },
   "scripts": {
-    "start": "node ./src/index.js",
-    "test": "npx mocha ./src/test/api.test.js"
+    "start": "node index.js",
+    "test": "npx mocha ./test/api.test.js"
   }
 }
