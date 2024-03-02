@@ -1,4 +1,4 @@
-name: Build and Deploy 
+name: Build Deploy and Test
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build_and_test:
 
     runs-on: ubuntu-latest
     steps:
@@ -20,9 +20,11 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: npm install
+    - name: Run integration tests
+      run: npm run test
     
   deploy-app:
-    needs: build
+    needs: build_and_test
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to production
