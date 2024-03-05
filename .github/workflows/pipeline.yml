@@ -39,6 +39,9 @@ jobs:
 
   run-e2e-tests:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./src/
     needs: deploy-app
     steps:
     - name: Checkout repository
