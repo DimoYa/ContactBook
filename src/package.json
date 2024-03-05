@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test:api": "npx mocha ./test/api.test.js",
-    "test:e2e": "npx playwright test ./test/e2e.test.js"
+    "test:api": "npx mocha ./test/*api*.test.js",
+    "test:e2e": "npx playwright test ./test/*e2e*.test.js"
   }
 }
