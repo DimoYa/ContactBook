@@ -9,10 +9,13 @@
   },
   "devDependencies": {
     "chai": "^4.3.10",
-    "chai-http": "^4.4.0"
+    "chai-http": "^4.4.0",
+    "@playwright/test": "^1.40.0",
+    "playwright-chromium": "1.9.2"
   },
   "scripts": {
     "start": "node index.js",
-    "test": "npx mocha ./test/api.test.js"
+    "test:api": "npx mocha ./test/api.test.js",
+    "test:e2e": "npx playwright test ./test/e2e.test.js"
   }
 }
